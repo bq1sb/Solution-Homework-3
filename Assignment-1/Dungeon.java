@@ -1,8 +1,9 @@
-import java.util.List
+
+import java.util.List;
 public class Dungeon {
     private final String name;
     private final List<Room> rooms;
-    private final List<npcs>;
+    private final List<NPC> npcs;
 
     public Dungeon(String name, List<Room> rooms, List<NPC> npcs) {
         this.name = name;
@@ -17,8 +18,8 @@ public class Dungeon {
             System.out.println(" - " + room.getName());
         }
         System.out.println("Npcs: ");
-        for (Nps npc : npcs) {
-            System.out > println(" - " + npc.getName())
+        for (NPC npc : npcs) {
+            System.out.println(" - " + npc.getName());
         }
     }
 }
